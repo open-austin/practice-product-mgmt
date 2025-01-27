@@ -1,0 +1,43 @@
+name: New product contributor profile
+description: Issue ticket for introducing oneself as a potential project contributor
+title:  "{Your Name}: Product Contributor Profile"
+labels: [ "product-mgmt", "contributor profile"]
+assignees:
+  - jcklpe
+body:
+  - type: textarea
+    id: introduction
+    attributes:
+      label: Introduction
+      description: Brief introduction of who you are and your interest in Open Austin
+      placeholder:
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: what-i-know
+    attributes:
+      label: What I know
+      description: List in bullet point form your skills. This can include product development frameworks, roadmap planning, stakeholder management, user research techniques, and tools used in product management.
+      placeholder:
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: what-i-want-to-know
+    attributes:
+      label: What I want to know
+      description: What are somethings you'd like to gain more experience with?
+      placeholder:
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: contact
+    attributes:
+      label: Contact info
+      description: What's some contact info you are willing to share, such as email, in case someone wants to recruit you to an Open Austin project? (NOTE! this is a public)
+      placeholder:
+      value:
+    validations:
+      required: true
