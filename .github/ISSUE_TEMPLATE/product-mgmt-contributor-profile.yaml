@@ -3,7 +3,7 @@ description: Issue ticket for introducing oneself as a potential project contrib
 title:  "{Your Name}: Product Contributor Profile"
 labels: [ "product-mgmt", "contributor profile"]
 assignees:
-  - jcklpe
+  - smarrison
 body:
   - type: textarea
     id: introduction
