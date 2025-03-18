@@ -8,9 +8,22 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
+      - name: Check label
+        run: |
+          echo "Label name: ${{ github.event.label.name }}"
+          echo "Is contributor profile?: ${{ github.event.label.name == 'contributor profile' }}"
+
       - name: Add issue to project
         if: github.event.label.name == 'contributor profile'
         uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/orgs/open-austin/projects/10
           github-token: ${{ secrets.PAT_SECRET }}
+
+      - name: Action result
+        run: echo "Action completed"
