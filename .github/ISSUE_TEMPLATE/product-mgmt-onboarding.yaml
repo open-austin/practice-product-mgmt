@@ -1,7 +1,7 @@
-name: Onboarding to the Data Community of Practice
-description: Use this template when joining the "Data Nerds" community of practice to get a checklist of tasks to self-onboard.
+name: Onboarding
+description: Use this template to get a checklist of tasks to self-onboard.
 title:  "{Name}: Onboarding Tasks "
-labels: [ "data-nerds",]
+labels: [ "onboarding",]
 assignees:
   - octocat
 body:
