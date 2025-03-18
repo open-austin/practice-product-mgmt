@@ -13,4 +13,4 @@ jobs:
         uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.com/orgs/open-austin/projects/10
-          github-token: ${{ secrets.ACTIONSTOKEN }}
+          github-token: ${{ secrets.ACTIONS_TOKEN }}
